@@ -1,0 +1,103 @@
+<html>
+<head><title>Q1</title><script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[2].checked) 
+ {
+  
+  ans=parent.score+1;
+  
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="29.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <strong><font color="#2A00AA" size=+1 type="monotype corsiva">28.</font>
+  <font color="#2A00AA" size="+1">What will the following code print out? <br>
+    public class Oct{</font>  </strong>
+  <p><strong><font color="#2A00AA" size="+1">public static void main(String argv[]){</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Oct  o = new Oct();</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  o.amethod();</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  public void amethod(){</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int  oi= 012;</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(oi);</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">}</font></strong></p>
+  <p><strong><font color="#0000CC" size="+1"><br>
+      <br>
+    
+      <input type=radio name=a value="">
+  </font><font color="#AA0000" size="+1">12 </font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+    <input type=radio name=a value="">
+  </font>   <font color="#AA0000" size="+1">    012 </font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+    <input type=radio name=a value="">
+    10 </font></strong></p>
+  <p>
+    <strong><font color="#AA0000" size="+1">
+      <input type=radio name=a value="">
+      10.0 </font></strong></p>
+</ol>
+<strong><font size="+1"><br>
+<br>
+<br>
+</font></strong>
+<center><input type="button" name="submit" value="Next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

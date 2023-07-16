@@ -1,0 +1,106 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[3].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="12.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <p><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>11.&nbsp;<strong><font size="+1">Find the output for the following C program</font></strong>.</strong></font></p>
+  <p><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>#include&lt;iostream.h&gt;<br>
+    #include&lt;conio.h&gt;<br>
+    void main()<br>
+    {<br>
+    int x=20,y=35;<br>
+    x = y++ + x++;<br>
+    y = ++y + ++x;<br>
+    cout&lt;&lt;x&lt;&lt;y;<br>
+    getch(();<br>
+    }</strong></font></p>
+  <p>
+      1.
+      <input type=radio name=a value="">
+    <font color="#AA0000">5<strong>5 91</strong></font></p>
+  <p>
+      <font color="#AA0000">
+      2.
+      <input type=radio name=a value="">
+      <strong>58 93</strong></font></p>
+  <p>
+      <font color="#AA0000">
+      3.
+      <input type=radio name=a value="">
+      <strong>57 94</strong></font></p>
+  <p>
+      <font color="#AA0000">
+      4.
+      <input type=radio name=a value="">
+      <strong>58 94</strong></font></p>
+  </font>
+  <div>
+</ol>
+<br><br><br>
+<center><input type="button" name="submit" value="next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

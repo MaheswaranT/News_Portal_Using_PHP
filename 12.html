@@ -1,0 +1,109 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[2].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="13.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+
+<ol>
+  <p><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>12.</strong></font></p>
+  <p><strong><font color="#2A00AA" size="+1">In  the following code segment what will be the result of the function, value of x  , value of y<br>
+    #include&lt;iostream.h&gt;<br>
+    #include&lt;conio.h&gt;<br>
+    void main()<br>
+    {unsigned int x=-1;<br>
+    int y;<br>
+    y = ~0;<br>
+    if(x == y)<br>
+    cout&lt;&lt;&quot;same&quot;;<br>
+    else<br>
+    cout&lt;&lt;&quot;not same&quot;;<br>
+    }<br>
+  </font></strong></p>
+  <p>1.
+      <input type=radio name=a value="">
+      <font color="#AA0000" size="+1"><strong>same,  MAXINT, -1</strong></font></p>
+  <p>
+      <strong><font color="#AA0000" size="+1">
+      2.
+      <input type=radio name=a value="">
+      not  same, MAXINT, -MAXINT</font></strong></p>
+  <p>
+      <font color="#AA0000">
+      3.
+      <input type=radio name=a value="">
+     <strong><font color="#AA0000" size="+1">same  , MAXUNIT, -1</font></strong></font></p>
+  <p>
+      <font color="#AA0000">
+      4.
+      <input type=radio name=a value="">
+      <strong><font color="#AA0000" size="+1">same,  MAXUNIT, MAXUNIT</font></strong></font></p>
+  </font>
+  <div>
+</ol>
+<br><br><br>
+<center><input type="button" name="submit" value="next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

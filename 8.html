@@ -1,0 +1,102 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[1].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="9.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <strong><font color="#2A00AA" size=+1 type="monotype corsiva">8.</font> <font color="#2A00AA" size="+1">Which of the following is the correct output for  the program given below? </font> </strong>
+  <p><strong><font color="#2A00AA" size="+1">void main()<br>
+    {<br>
+  &nbsp;int k,n=30;<br>
+  &nbsp;k=(n&gt;5?(n&lt;=10?100:200):500);<br>
+  &nbsp;printf(&quot;%d&quot;,n);<br>
+  &nbsp;getch();<br>
+    }</font></strong><br>
+    <br>
+    <font color="#AA0000">
+      1.
+      <input type=radio name=a value="cmp">
+      <strong><font color="#AA0000" size="+1"> 200 </font></strong></font></p>
+  <p>
+      <font color="#AA0000">
+      2.
+      <input type=radio name=a value="file cmp"></font><strong><font color="#AA0000" size="+1"> 30 </font></strong></p>
+  <p>    <font color="#AA0000">
+      3.
+      <input type=radio name=a value="fc">
+      <strong><font color="#AA0000" size="+1">100</font></strong></font></p>
+  <p>
+    <font color="#AA0000">
+      4.
+      <input type=radio name=a value="none">
+      <strong><font color="#AA0000" size="+1">500</font></strong></font></p>
+  <br>
+  <br>
+</ol>
+<center><input type="button" name="submit" value="Next" onClick="check_ans();">
+</center> 
+</form>
+</body>
+</html>

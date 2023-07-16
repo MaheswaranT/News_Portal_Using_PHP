@@ -1,0 +1,100 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[0].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="22.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+	<font color="#2A00AA" size=+1 type="monotype corsiva"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21.</strong></font><strong><font color="#2A00AA" size="+1">
+  What will happen if you try to compile and run the  following code <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public class MyClass { </font>    </strong>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String  arguments[]) { </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  amethod(arguments); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  } &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  public void amethod(String[] arguments) {</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(arguments); </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(arguments[1]); </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </font></strong></p>
+  <p><strong><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font><font color="#2A00AA" size="+1">}  </font></strong></p>
+  <p>
+    <strong><font size="+1">
+    </font><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font><font size="+1">
+  <input type=radio name=a value="">
+  <font color="#AA0000">error  Can't make static reference to void amethod  </font></font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+  </font><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font><font color="#AA0000" size="+1">
+  <input type=radio name=a value="">
+  error  method main not correc</font>
+      <font color="#AA0000" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+    </font><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font><font color="#AA0000" size="+1">
+    <input type=radio name=a value="">
+    error  array must include parameter</font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+  </font><font color="#2A00AA" size=+1 type="monotype corsiva"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font><font color="#AA0000" size="+1">
+  <input type=radio name=a value="">
+  a method  must be declared with String</font></strong></p>
+  <br><br><br>
+<center><input type="button" name="submit" value="Next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

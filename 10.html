@@ -1,0 +1,113 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[3].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="11.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <p><strong><font color="#2A00AA" size=+1 type="monotype corsiva">10.</font><font color="#2A00AA" size="+1">Which of the following is the correct output for the program  given below?<br>
+  &nbsp;void fun(int n)<br>
+    {<br>
+  &nbsp; if(n&gt;0)<br>
+  &nbsp;&nbsp; {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; fun(--n);<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d&quot;,n);<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; fun(--n);<br>
+  &nbsp;&nbsp;&nbsp; }<br>
+    }<br>
+    void main()<br>
+    {<br>
+  &nbsp; int a=3;<br>
+  &nbsp; fun(a);<br>
+  &nbsp; getch();<br>
+    }</font></strong><br>
+  <br>
+  <br>
+  1.
+  <input type=radio name=a value="format">
+  <strong><font size="+1"> <font color="#AA0000">0 2 1 0</font></font></strong></p>
+  <p>
+      <font color="#AA0000">
+      2.
+      <input type=radio name=a value="delete drive">
+      <strong><font color="#AA0000" size="+1"> 1 1 2 0</font></strong></font></p>
+  <p>
+    <font color="#AA0000">
+      3.
+      <input type=radio name=a value="erase all">
+      <strong><font color="#AA0000" size="+1">2 1 0 2</font></strong></font></p>
+  <p>
+    <font color="#AA0000">
+      4.
+      <input type=radio name=a value="none">
+      <strong><font color="#AA0000" size="+1"> 0 1 2 0</font></strong></font></p>
+  <font color="#AA0000"></font>
+    <div>
+    </font>
+</ol>
+<br><br><br>
+<center><input type="button" name="submit" value="next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

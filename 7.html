@@ -1,0 +1,101 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[0].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="8.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <font color="#2A00AA" size=+3 type="monotype corsiva"><strong><font size="+1">7.</font></strong></font><font size="+1"><strong> <font color="#2A00AA">Which of the following is the correct output for  the program given below? </font></strong> </font>
+  <p><font color="#2A00AA" size="+1"><strong> void main()<br>
+    {<br>
+  &nbsp; int x,y,z;<br>
+  &nbsp; x=y=z=1;<br>
+  &nbsp; z=++x||++y||++z;<br>
+  &nbsp; printf(&quot;x=%d  y=%d z=%d\n&quot;,x,y,z);<br>
+  &nbsp; getch();</strong></font></p>
+  <p><font color="#2A00AA" size="+1"><strong>}</strong></font></p>
+  <p> <font size="+1"><strong></strong></font></p>
+  <p><br>
+      <br>
+      1.
+      <input type=radio name=a value="deldir">
+    <font size="+1"><strong> <font color="#AA0000">x=2&nbsp; y=1 z=1</font></strong></font></p>
+  <p><font color="#AA0000">     
+    2.
+    <input type=radio name=a value="delete dir"></font><font size="+1"><strong><font color="#AA0000">x=2&nbsp; y=2 z=1</font></strong></font></p>
+  <p>    <font color="#AA0000">
+      3.
+      <input type=radio name=a value="deltree"></font><font size="+1"><strong><font color="#AA0000"> x=2&nbsp; y=2 z=2</font></strong></font></p>
+  <p>
+    <font color="#AA0000">
+      4.
+      <input type=radio name=a value="none"></font><font size="+1"><strong><font color="#AA0000"> x=1&nbsp; y=2 z=1</font></strong></font></p>
+  <font color="#AA0000"></font><br>
+  <br>
+</ol>
+<center><input type="button" name="submit" value="Next" onClick="check_ans();">
+</center> 
+</form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[2].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="17.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+  <p><strong><font color="#2A00AA" size=+1 type="monotype corsiva">16.</font><font color="#2A00AA" size="+1">Find the output for the following C program<br>
+    void main()<br>
+    {<br>
+    char  *ptr = &quot;Ramco Systems&quot;;<br>
+    (*ptr)++;<br>
+    cout&lt;&lt;ptr;<br>
+    ptr++;<br>
+    cout&lt;&lt;ptr;<br>
+    getch();<br>
+    }</font><font size="+1"><br>
+    1.
+    <input type=radio name=a value="">
+    <font color="#AA0000">Ramco</font></font></strong></p>
+  <p>
+    <strong><font color="#AA0000" size="+1">
+    2.
+    <input type=radio name=a value="">
+    Systems</font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+    3.
+    <input type=radio name=a value="">
+    Compilation  error: lvalue required </font></strong></p>
+  <p>
+      <strong><font color="#AA0000" size="+1">
+      4.
+      <input type=radio name=a value="">
+      Ramco Systems</font></strong><br><br>
+</p>
+  <center><input type="button" name="submit" value="Next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

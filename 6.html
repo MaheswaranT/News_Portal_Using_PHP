@@ -1,0 +1,99 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[0].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="7.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <font size=+3 type="monotype corsiva"><font color="#2A00AA" size="+1"><strong>6.</strong></font></font><strong><font color="#2A00AA" size="+1"> Which of the following is the correct output for the program given below  if a short int is 2 bytes wide? </font></strong>
+  <p><font color="#2A00AA" size="+1"><strong> void main()<br>
+    {<br>
+  &nbsp; short int i=0;<br>
+  &nbsp; for(i&lt;=5&amp;&amp;i&gt;=-1;++i;i&gt;0)<br>
+  &nbsp;&nbsp; printf(&quot;%u\n&quot;,i);<br>
+  &nbsp; printf(&quot;\n&quot;);<br>
+  &nbsp; getch();</strong></font></p>
+  <p><font color="#2A00AA" size="+1"><strong>}</strong></font><font color="#2A00AA"><br>
+    </font><br>
+    1.
+    <input type=radio name=a value="drfrgmnt">
+    <font color="#AA0000" size="+1"><strong>1&hellip;.65535</strong></font></p>
+  <p>
+      <font color="#AA0000">
+      2.
+    <input type=radio name=a value="defrag"></font><strong><font color="#AA0000" size="+1"> Expression  syntax error</font></strong></p>
+  <p>    3.
+      <input type=radio name=a value="fragmnt">
+      <font color="#AA0000" size="+1"><strong><font size="+1">No output </font></strong></font></p>
+  <p>
+    <font color="#AA0000" size="+1">4.
+    <input type=radio name=a value="none">
+      <strong>0 1  2 3 4 5</strong></font></p>
+  <font color="#AA0000"></font><br>
+  <br>
+</ol>
+<center><input type="button" name="submit" value="Next" onClick="check_ans();">
+</center> 
+</form>
+</body>
+</html>

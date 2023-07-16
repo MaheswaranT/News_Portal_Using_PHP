@@ -1,0 +1,106 @@
+<html>
+<head><title>Q1</title><script type=text/javascript>
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[2].checked) 
+ {
+  
+  ans=parent.score+1;
+  document.write(ans);
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="30.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <strong><font color="#2A00AA" size=+1 type="monotype corsiva">29.</font>
+  <font color="#2A00AA" size="+1">Given the following code what will be output? <br>
+    public class Pass{</font>  </strong>
+  <p><strong><font color="#2A00AA" size="+1">static int j=20;</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">public static void main(String argv[]){</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int  i=10;</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pass  p = new Pass();</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  p.amethod(i);</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(i);</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(j);</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  public void amethod(int x){</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  x=x*2;</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  j=j*2;</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">}</font></strong></p>
+  <p><strong><font size="+1"><br>
+      <br>
+        <font color="#AA0000">
+      <input type=radio name=a value="">
+    Error:  amethod parameter does not match variable </font></font></strong></p>
+  <p>
+    <strong><font color="#AA0000" size="+1">
+        <input type=radio name=a value="">
+        20 and 40 </font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+      <input type=radio name=a value="">
+      10 and 40 </font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">    
+    <input type=radio name=a value="">
+  10, and 20 </font></strong></p>
+</ol>
+<strong><font size="+1"><br>
+<br>
+</font></strong><br>
+<center>
+  <input type="button" name="submit" value="Next" onClick="check_ans();">
+</center> 
+</form>
+</body>
+</html>

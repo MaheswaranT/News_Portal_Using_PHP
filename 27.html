@@ -1,0 +1,104 @@
+<html>
+<head><title>Q1</title><script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[0].checked) 
+ {
+  
+  ans=parent.score+1;
+  
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="28.html";
+}
+
+
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <strong><font color="#2A00AA" size=+1 type="monotype corsiva">27.</font> <font color="#2A00AA" size="+1">What will be the result when you try to compile and  run the following code? <br>
+private class Base{</font> </strong>
+  <p><strong><font color="#2A00AA" size="+1">Base(){</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp; int i =  100;&nbsp;&nbsp;&nbsp;&nbsp; </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(i);</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp; }</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">}</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">public class Pri extends Base{</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">static int i = 200;</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">public static void main(String argv[]){</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pri  p = new Pri();</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(i);</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">}</font></strong></p>
+  <p>
+      <input type=radio name=a value="">
+    <strong><font size="+1"><font color="#AA0000">Error at compile time </font></font></strong></p>
+  <p>
+      <font color="#AA0000">
+      <input type=radio name=a value="">
+      <strong><font color="#AA0000" size="+1">200 </font></strong></font></p>
+  <p>
+      <font color="#AA0000">
+      <input type=radio name=a value="">
+      <strong><font color="#AA0000" size="+1">100  followed by 200 </font></strong></font></p>
+  <p>
+      <font color="#AA0000">
+      <input type=radio name=a value="">
+     <strong><font color="#AA0000" size="+1">100  </font></strong></font></p>
+  </font>
+  <div>
+</ol>
+<br><br><br>
+<center><input type="button" name="submit" value="next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[2].checked) 
+ {
+  
+  ans=parent.score+1;
+  
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+ 
+  
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="3.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script> 
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+
+
+
+<form name="form1" method="post" action="">
+<ol>
+  <p><font color="#2A00AA" size=+1 type="monotype corsiva">2.Which of the following is the output for the program given below?</font></p>
+  <p><font color="#2A00AA" size="+1">#include&lt;iostream.h&gt;</font></p>
+  <p><font color="#2A00AA" size="+1">void main()<br>
+    {</font></p>
+  <p><font color="#2A00AA" size="+1"> char *p=&quot;hello&quot;;</font></p>
+  <p><font color="#2A00AA" size="+1">char *q=p;</font></p>
+  <p><font color="#2A00AA" size="+1">cout&lt;&lt;p&lt;&lt;q;</font></p>
+  <p><font color="#2A00AA" size="+1">q=&quot;hai&quot;;</font></p>
+  <p><font color="#2A00AA" size="+1">cout&lt;&lt;p&lt;&lt;q;</font></p>
+  <p><font color="#2A00AA" size="+1">}</font></p>
+  <br>
+<br><br>
+<font size=+2 type="Comic Sans MS">
+<li><input type=radio name=a value="cd">
+  <font color="#D40000" size="+1" type="Comic Sans MS"> </font><font color="#AA0000" size="+1" type="Comic Sans MS">hello</font><font color="#AA0000" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;hai&nbsp;&nbsp;&nbsp;&nbsp;hello&nbsp;&nbsp;&nbsp;&nbsp;hai</font></li>
+
+<font color="#AA0000">
+<div>
+</font>
+<li>
+  <font color="#AA0000">
+    <input type=radio name=a value="chkdir"></font><font color="#AA0000" size="+1" type="Comic Sans MS"> hai</font><font color="#AA0000" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;hai&nbsp;&nbsp;&nbsp;&nbsp;hello&nbsp;&nbsp;&nbsp;&nbsp;hai</font></li>
+<font color="#AA0000">
+<div>
+</font>
+<li>
+  <font color="#AA0000">
+    <input type=radio name=a value="cudir"></font><font color="#AA0000" size="+1" type="Comic Sans MS"> hello</font><font color="#AA0000" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;hello&nbsp;&nbsp;&nbsp;&nbsp;hello&nbsp;&nbsp;&nbsp;&nbsp;hai</font></li>
+<font color="#AA0000">
+<div>
+</font>
+<li>
+  <font color="#AA0000">
+  <input type=radio name=a value="both a & b"> 
+  </font><font color="#AA0000" size="+1" type="Comic Sans MS">hello</font><font color="#AA0000" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;hai&nbsp;&nbsp;&nbsp;&nbsp;hai</font><font color="#AA0000" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;hai</font></li>
+</font><div>
+</ol>
+<br><br><br>
+
+<center><input type="button" name="submit" value="Next" onClick="check_ans();">
+</center> 
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<head><title>Q1</title><script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[2].checked) 
+ {
+  
+  ans=parent.score+1;
+  
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="27.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+<ol>
+  <strong><font color="#2A00AA" size=+1 type="monotype corsiva">26.</font>
+  <font color="#2A00AA" size="+1">What will be printed out if you attempt to compile  and run the following code ? <br>
+    int i=1; </font>  </strong>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  switch (i) { </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  case 0: </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(&quot;zero&quot;); </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  break; </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case  1: </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(&quot;one&quot;); </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case  2: </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(&quot;two&quot;); </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  default: </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println(&quot;default&quot;); </font></strong></p>
+  <p><strong><font color="#2A00AA" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></strong></p>
+  <p><strong><font size="+1"><br>
+      <br>
+      <input type=radio name=a value="">
+        <font color="#AA0000">one  </font></font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+    <input type=radio name=a value="">
+  one, default </font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+    <input type=radio name=a value="">
+  one, two, default </font></strong></p>
+  <p><strong><font color="#AA0000" size="+1">
+    <input type=radio name=a value="">
+  default </font></strong></p>
+</ol>
+<br><br><br>
+<center><input type="button" name="submit" value="Next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<head><title>Q1</title>
+<script type=text/javascript>
+history.forward();
+var ans;
+
+
+
+function check_ans()
+{
+if (document.form1.a[0].checked) 
+ {
+  
+  ans=parent.score+1;
+ 
+  parent.score=ans
+ go_next();  
+ }
+else
+{
+  
+  parent.score=parent.score; 
+  go_next();
+ }
+}
+
+function go_next()
+{
+parent.main.location.href="18.html";
+}
+
+//document.write("<h2> Your Score is = "+ parent.score+ "</h2>");
+
+</script>
+
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+<script LANGUAGE="JavaScript">
+
+function click()
+{
+if (event.button==2) 
+{
+alert("can't do")
+}
+}
+document.onmousedown=click
+</script>
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();">
+<form name="form1" method="post" action="">
+  <p><font color="#2A00AA" size=+3 type="monotype corsiva"><strong><font size="+1">17.</font></strong></font><font size="+1"><strong><font color="#2A00AA">Which of the  following statements are correct about the program given below?</font></strong></font></p>
+  <p><font color="#2A00AA" size="+1"><strong>#include&lt;iostream.h&gt;<br>
+    #include&lt;conio.h&gt;<br>
+    void main()<br>
+    {</strong></font></p>
+  <p> <font size="+1"><strong><font size="+1"><strong><font color="#2A00AA">&nbsp;&nbsp;&nbsp;&nbsp; </font></strong></font><font color="#2A00AA">int  i; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i=1; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i=i+2*i++; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(%d,i);</font></strong></font></p>
+  <p><font size="+1"><strong>}<br>
+    <br>
+    <input type=radio name=a value=""><font color="#AA0000">4</font></strong></font></p>
+  <p>
+    <font size="+1"><strong><font color="#AA0000">
+      <input type=radio name=a value="">
+      5</font></strong></font></p>
+  <p>
+    <font size="+1"><strong><font color="#AA0000">
+      <input type=radio name=a value="">
+      3</font></strong></font></p>
+  <p>
+    <font size="+1"><strong><font color="#AA0000">
+      <input type=radio name=a value="">
+      6</font><br>
+      <br>
+  </strong></font></p>
+  <center><input type="button" name="submit" value="Next" onClick="check_ans();"></center> 
+</form>
+</body>
+</html>
