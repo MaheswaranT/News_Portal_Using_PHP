@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/inuit.css">
+<link rel="stylesheet" href="css/fluid-grid16-1100px.css">
+<link rel="stylesheet" href="css/eve-styles.css">
+<link rel="shortcut icon" href="icon.png">
+<link rel="apple-touch-icon-precomposed" href="img/icon.png">
+<script src="js/respond-min.js"></script>
+<script src="js/jquery164min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<link rel="stylesheet" href="css/flexslider.css">
+<script>
+$(window).load(function () {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        directionNav: false,
+        keyboardNav: true,
+        mousewheel: true
+    });
+});
+</script>
+<!--[if lte IE 7]>
+<style>
+hr { display:block; height:1px; border:0; border-top:1px solid #fff; margin:1em 0; padding:0; }
+.grid-4{ width:22% }
+</style>
+<![endif]-->
+<script type="text/javascript">
+function valid()
+{
+	if(fm.rg.value=="stf0001"&&fm.pas.value=="ngm")
+	
+	{
+		window.alert("Thanks For Logging" );
+return true;
+			
+	}
+else if(fm.rg.value=="stf0002"&&fm.pas.value=="college")
+	{
+		window.alert("Thanks For Logging" );
+return true;
+			
+	}
+	else
+	   window.alert("Invalid Staff Login" );
+	 
+		return false;	
+}
+</script>
+
+
+
+</head>
+<!--===============================================================  Logo, social and menu =====================================================================================-->
+<body background="cliping/images.jpeg">
+<div class="wrapper"> <a href="index.html">
+  <h1>NEWS PORTAL</h1>
+  </a>
+  <div class="social"> <a href="#"><img src="img/facebook.png" width="20" height="20" alt=""></a> <a href="#"><img src="img/twitter.png" width="20" height="20" alt=""></a> <a href="#"><img src="img/linkedin.png" width="20" height="20" alt=""></a> <a href="#"><img src="img/vcard.png" width="20" height="20" alt=""></a> <a href="#"><img src="img/picasa.png" width="20" height="20" alt=""></a> </div>
+  <ul id="nav" class="main">
+     <li><a href="index.html"><span><strong>Home</strong></span></a></li>
+      <li><a href="user login.html"><span><strong>Learmer</strong></span></a></li>
+    <li><a href="creator login.html"><span><strong>Developer</strong></span></a></li>
+			    <li><a href="management login.html"><span><strong>Admin</strong></span></a></li>			
+                      
+<li><a href="test.html"><span><strong>Take Test</strong></span></a></li>
+<li><a href="links.html"><span><strong>Links</strong></span></a></li>	
+  </ul>
+</div>
+<!--end of wrapper div-->
+<div class="clear"></div>
+<div class="wrapper">
+  <p align="center"><font size="+3">Admin Login Authenticator</font></p>
+      <form id="form1" name="fm" method="post" action="management.html" onSubmit="return valid();">
+
+<br><br>
+<br><br>
+       <p align="center"> <label><font size="+1">Enter ID</font>
+          <input type="text" name="rg" id="textfield" required/>
+          </label></p>
+       <p>&nbsp;</p>
+          <p align="center"><label><font size="+1">Enter Password</font>
+          <input type="password" name="pas" id="textfield" required/>
+          </label></p>
+        <p>&nbsp;</p><br>
+
+           <p align="center"><label>
+          <input type="submit" name="button" id="button" value="Submit" />
+          </label></p>
+      </form>
+
+
+  <!--end of div grids-->
+</div>
+<!--end of div wrapper-->
+<!--========================================================================== Content Part 1 =====================================================================================--><!--end of wrapper-->
+<hr />
+<!--========================================================================== Content Part 2 =====================================================================================--><!--end of wrapper-->
+<hr />
+<!--========================================================================== Content Part 3 =====================================================================================--><!--end of wrapper-->
+<!--===================================================  second row of Content Part 3 ================================================--><!--end of wrapper-->
+<!--========================================================================== Footer =====================================================================================--><!--end of wrapper-->
+</body>
+</html>

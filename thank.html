@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+var final
+function result()
+{
+ final=parent.score;
+ document.write("<h2> Your Score is = "+ parent.score+ "</h2>"+ final);
+ this.form.view.value = final; 
+}
+
+
+document.write("<h1> Click To Update Of Your Participation </h1>")
+
+</script>
+<script type="text/javascript">
+
+document.attachEvent("onkeydown", my_onkeydown_handler); 
+function my_onkeydown_handler() 
+{ 
+switch (event.keyCode) 
+{ 
+
+case 116 : // 'F5' 
+event.returnValue = false; 
+event.keyCode = 0; 
+window.status = "We have disabled F5"; 
+break; 
+} 
+} 
+</script>
+
+
+
+</head>
+<body bgcolor="#9FDCF8" onLoad="my_onkeydown_handler();" onLoad="result();">
+<script type="text/javascript">
+var final
+function result()
+{
+ final=parent.score;
+ document.write("<h2> Your Score is = "+ parent.score+ "</h2>"+ final);
+ this.form.view.value = final; 
+}
+
+
+//document.write("<h1> Click To Update Of Your Participation </h1>")
+
+</script>
+</body>
+</html>

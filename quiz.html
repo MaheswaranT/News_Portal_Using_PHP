@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+
+var score=0;
+</script>
+<SCRIPT LANGUAGE = "JavaScript">
+!--
+var secs,i=0
+var timerID = null
+var timerRunning = false
+var delay = 1000
+
+function InitializeTimer()
+{
+    // Set the length of the timer, in seconds
+    secs = 10
+    StopTheClock()
+    StartTheTimer()
+}
+
+function StopTheClock()
+{
+    if(timerRunning)
+        clearTimeout(timerID)
+    timerRunning = false
+}
+
+function StartTheTimer()
+{
+
+    if (secs==0)
+    {
+        StopTheClock()
+        // Here's where you put something useful that's
+        // supposed to happen after the allotted time.
+        // For example, you could display a message:
+        alert("You have just wasted 10 seconds of your life.")
+
+      
+
+    }
+    else
+    {
+       
+        self.status=secs
+        
+        
+        secs = secs - 1;
+        timerRunning = true  
+this.clockForm.clock.value = secs; 
+        timerID =setTimeout("StartTheTimer()", delay)
+    }
+
+
+
+
+}
+
+//-->
+</SCRIPT>
+
+
+</head>
+<frameset cols=",100%"> 
+  <frame name="hiddenF" FRAMEBORDER="NO" src="mains.html">
+  <frame name="quiz" FRAMEBORDER="NO" src="1.html" >
+</frameset><noframes></noframes>
+<noframes>
+<body onLoad="InitializeTimer();">
+<FORM NAME = "clockForm"> 
+  <INPUT TYPE="button"  align="left" NAME = "clock" SIZE = "5" class="frm"> 
+</FORM> 
+</body>
+</html>
